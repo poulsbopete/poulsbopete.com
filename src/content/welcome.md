@@ -1,15 +1,17 @@
 ---
 layout: post
-title: 'Welcome to Ghost'
-author: [Ghost]
-tags: ['Getting Started']
-image: img/welcome-to-ghost.jpg
-date: '2018-05-06T23:46:37.121Z'
+title: 'Welcome to Poulsbo Pete'
+author: [poulsbopete]
+tags: ['Welcome']
+image:  img/olliedog.jpeg
+date: '2021-01-02T23:46:37.121Z'
 draft: false
 excerpt: Welcome, it's great to have you here. We know that first impressions are important, so we've populated your new site with some initial getting started posts that will help you get familiar with everything in no time.
 ---
 
 **A few things you should know upfront**:
+
+![Ollie the dog](img/wild-dog.gif)
 
 1. Ghost is designed for ambitious, professional publishers who want to actively build a business around their content. That's who it works best for.
 2. The entire platform can be modified and customised to suit your needs. It's very powerful, but does require some knowledge of code. Ghost is not necessarily a good platform for beginners or people who just want a simple personal blog.
