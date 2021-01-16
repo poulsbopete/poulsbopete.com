@@ -97,7 +97,6 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Link to="/about">About</Link>
                 </li>
                 <li role="menuitem">
-                  <Link to="/tags/getting-started/">Getting Started</Link>
                 </li>
               </ul>
               {isPost && (
