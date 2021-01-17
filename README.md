@@ -1,89 +1,21 @@
-# gatsby-casper
+# Poulsbo Pete Website
 
-Demo: https://gatsby-casper.netlify.app
+Yes, this site is based on a port of [Casper](https://github.com/TryGhost/Casper) v3 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/). 
 
-This is a static blog generator and starter gatsby repo. A port of [Casper](https://github.com/TryGhost/Casper) v3 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/).
+This is my first GatsbyJS website and I might change the theme and/or just write my own from scratch. My goal is a simple repeatable process with:
 
-## Getting Started
+1. **Low cost** to run and maintain. Everything is hosted on AWS S3 and CloudFront CDN, with github
+2. **Easily add new posts** from anywhere. Use any GIT client to change content and have it automatically uploaded to AWS S3. I want to do this from my iPhone when traveling.
+3. **Fast and secure**. I don’t want to worry about performance or security. No updating servers, certificates, etc. See goal number 1, keep it low cost!
 
-Clone this repo.
+# How to
 
-```
-git clone https://github.com/scttcper/gatsby-casper.git --depth=1
-```
+Was this hard to set up? No, not really. I followed the Gatsby [quick start](https://www.gatsbyjs.com/docs/quick-start) guide.  Once I had my website running locally, I followed a blog post on how to [set up Gatsby on S3](https://blog.elantha.com/gatsby-s3-cloudfront/). Follow the three steps and you get continuous deployment using GIT automation, pushing your website to S3.
 
-Remove .git folder and setup a new one
+# What’s next?
 
-```
-rm -rf .git && git init
-```
+I’m going to start with:
+1. Adding New Relic client-side monitoring
+2. Testing different mobile clients for the blog posts
+3. Update this Readme with any issues or surprises that I run into. 
 
-Edit website-config.ts with your website settings.
-Either disable subscribe or setup a mailchimp list and add the form action and hidden field input name.
-
-Now push to whatever repo you want!
-
-### Progress
-
-- [x] emotion / component styles
-- [x] home page
-- [x] tag page
-- [x] author page
-- [x] blog page
-  - [x] subscribe form - using [mailchimp](https://mailchimp.com)
-  - [ ] full width images in markdown? - not sure if possible
-  - [x] multiple post authors
-- [x] 404 page
-- [x] subscribe modal/overlay
-- [x] rss feed (on production build)
-- [ ] polish ✨
-  - [x] meta tags
-  - [x] page titles
-  - [ ] pagination
-
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/scttcper/gatsby-casper)
-
-## How to configure Google Analytics
-
-Edit `gatsby-config.js` and add your tracking ID
-
-```javascript
-{
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      // Here goes your tracking ID
-      trackingId: 'UA-XXXX-Y',
-      // Puts tracking script in the head instead of the body
-      head: true,
-      // IP anonymization for GDPR compliance
-      anonymize: true,
-      // Disable analytics for users with `Do Not Track` enabled
-      respectDNT: true,
-      // Avoids sending pageview hits from custom paths
-      exclude: ['/preview/**'],
-      // Specifies what percentage of users should be tracked
-      sampleRate: 100,
-      // Determines how often site speed tracking beacons will be sent
-      siteSpeedSampleRate: 10,
-    },
-},
-```
-
-## How to edit your site title and description
-
-Edit `gatsby-config.js` section `siteMetadata`
-
-```javascript
- siteMetadata: {
-    title: 'My awesome site name',
-    description: 'This is a description for my site',
-    siteUrl: 'https://mysite.com', // full path to blog - no ending slash
-  },
-```
-
-## How to adjust pagination
-
-In `gatsby-node.js`, edit the `postsPerPage` constant. The default value is
-six posts per page.
