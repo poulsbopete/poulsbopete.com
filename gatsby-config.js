@@ -11,7 +11,6 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
-
     {
       resolve: 'gatsby-plugin-newrelic',
       options: {
@@ -29,7 +28,6 @@ module.exports = {
         }
       }
     },
-
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-sharp',
