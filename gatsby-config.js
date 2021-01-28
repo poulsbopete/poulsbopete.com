@@ -11,6 +11,25 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
+
+    {
+      resolve: 'gatsby-plugin-newrelic',
+      options: {
+        configs: {
+          production: {
+            instrumentationType: 'proAndSPA',
+            accountId: '2878449',
+            trustKey: '2878449',
+            agentID: '960313235',
+            licenseKey: 'NRJS-cc184e6f05a02c5e01e',
+            applicationID: '960313235',
+            beacon: 'bam.nr-data.net',
+            errorBeacon: 'bam.nr-data.net'
+          }
+        }
+      }
+    },
+
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-sharp',

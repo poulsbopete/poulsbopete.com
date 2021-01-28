@@ -6,7 +6,7 @@
   "author": "Peter Simkins <peter.simkins@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GATSBY_NEWRELIC_ENV=production gatsby build",
     "dev": "gatsby develop",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "lint:fix": "eslint --fix --ext .js,.ts,.tsx .",
@@ -14,6 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@babel/runtime": "^7.12.5",
     "@emotion/react": "11.1.4",
     "@emotion/styled": "11.0.0",
     "cssnano": "4.1.10",
@@ -27,6 +28,7 @@
     "gatsby-plugin-feed": "2.11.0",
     "gatsby-plugin-global-styles": "^1.0.17",
     "gatsby-plugin-google-analytics": "2.9.0",
+    "gatsby-plugin-newrelic": "^1.0.5",
     "gatsby-plugin-postcss": "3.5.0",
     "gatsby-plugin-react-helmet": "3.8.0",
     "gatsby-plugin-sharp": "2.12.0",
