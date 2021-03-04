@@ -29,6 +29,12 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
+      - name: Configure Stripe Secrets
+        uses: stripe-actions/configure-stripe-secrets@v1
+        with:
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          GATSBY_STRIPE_PUBLISHABLE_KEY: ${{ secrets.GATSBY_STRIPE_PUBLISHABLE_KEY }}
+          aws-region: us-west-2
       - name: Deploy
         uses: jonelantha/gatsby-s3-action@v1
         with:
