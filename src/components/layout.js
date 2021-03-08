@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
             <div>
               Built by <a href="https://twitter.com/poulsbopete">Poulsbo Pete</a> with{' '}
               <a href="https://www.gatsbyjs.org">Gatsby</a> | View{' '}
-              <a href="https://github.com/poulsbopete/poulsbopete.com">
+              <a href="https://github.com/poulsbopete/poulsbopete.com/tree/stripe">
                 source
               </a>
             </div>

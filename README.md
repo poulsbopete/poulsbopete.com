@@ -15,7 +15,7 @@ Leveraging Stripes client only checkout provides even more e-commerce functional
 * Cost-efficient hosting of static sites.
 
 # Overview
-This static application is written in Javascript, hosted on S3 in a serverless configuration. No need for a database or payment processing applications allows me to leverage payment APIs offered by Stripe. I am securely collecting and processing payment information from customers without storing any of the customer information. Leveraging Stripe's hosted checkout doesn't require any backend component.
+This static application is written in Javascript, hosted on S3 in a server-less configuration. No need for a database or payment processing applications allows me to leverage payment APIs offered by Stripe. I am securely collecting and processing payment information from customers without storing any of the customer information. Leveraging Stripe's hosted checkout doesn't require any backend component.
 
 When you load the page, the catalog is loaded from the Stripe source plugin, which uses the https://stripe.com/docs/upgrades#2020-08-27 API.
 
@@ -24,5 +24,10 @@ When you load the page, the catalog is loaded from the Stripe source plugin, whi
 My goal was to have a basic storefront with a product catalog, shopping cart, payment processing, multiple prices, tax, etc. I wanted to keep the site very quick and easy to update.
 
 # Why did I pick GatsbyJS?
+I'm a GatsbyJS fan but more importantly I was thinking I could use one of the many Gatsby Starter templates that leverage Stripe. What I found was all of the [open source starters](https://www.gatsbyjs.com/starters/?s=stripe) were based off of older Stripe APIs and were no longer compatible. I'm planning on working on a couple of projects to see if I can update the calls to support the newer APIs.
 
 # What's next?
+I'm going to take my existing [Seek Imprints](https://shop.seekimprints.com/) e-commerce website and simplify the design, moving it from Shopify to hosted on AWS S3/CloudFront, leveraging Stripe for purchasing, tax collection, ordering from manufacturers, etc.
+
+Here is a diagram of the simplified design:
+![Simplified Design](seek-imprints.jpg)
