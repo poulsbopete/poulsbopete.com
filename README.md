@@ -30,4 +30,4 @@ I'm a GatsbyJS fan but more importantly I was thinking I could use one of the ma
 I'm going to take my existing [Seek Imprints](https://shop.seekimprints.com/) e-commerce website and simplify the design, moving it from Shopify to hosted on AWS S3/CloudFront, leveraging Stripe for purchasing, tax collection, ordering from manufacturers, etc.
 
 Here is a diagram of the simplified design:
-![Simplified Design](seek-imprints.jpg)
+![Simplified Design](https://stripe.poulsbopete.com/images/seek-imprints.jpg)
