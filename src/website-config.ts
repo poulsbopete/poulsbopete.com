@@ -50,9 +50,9 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'Poulsbo Pete',
-  description: 'Personal Blog',
+  description: 'Poulsbo Pete',
   coverImage: 'img/blog-cover.png',
-  logo: 'img/pp-logo.png',
+  logo: 'img/ghost-logo.png',
   lang: 'en',
   siteUrl: 'https://poulsbopete.com',
   facebook: 'https://www.facebook.com/peter.simkins',
